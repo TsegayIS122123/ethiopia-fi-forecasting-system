@@ -85,4 +85,162 @@ The system will help stakeholders understand:
 5. **Data Quality High**: Confidence levels documented for all records
 
 ---
+---
+
+### **Task 2: Exploratory Data Analysis (EDA)** — **COMPLETED**
+
+#### 🎯 **Objective**
+Analyze Ethiopia’s financial inclusion data to uncover trends, drivers, bottlenecks, and relationships between infrastructure, events, and inclusion outcomes.
+
+---
+
+## 📊 Dataset Overview
+
+| Metric | Value |
+|-------|--------|
+| Total Records | 63 |
+| Observations | 45 |
+| Events | 15 |
+| Targets | 3 |
+| Unique Indicators | 23 |
+| Time Range | 2011–2025 |
+| Confidence Level | 82% High, 18% Medium |
+
+### Pillar Coverage
+- **ACCESS** — Account ownership, infrastructure
+- **USAGE** — Digital payments, mobile money activity
+- **ENABLERS** — Connectivity, affordability, digital ID
+
+---
+
+## 📈 Access (Account Ownership) Analysis
+
+### Historical Trend
+| Year | Ownership |
+|--------|-----------|
+| 2011 | 14% |
+| 2014 | 22% |
+| 2017 | 35% |
+| 2021 | 46% |
+| 2024 | 49% |
+
+### Growth Pattern
+- 2014–2017 → **+13pp**
+- 2017–2021 → **+11pp**
+- 2021–2024 → **+3pp (slowdown)**
+
+### Key Finding
+Despite massive mobile money growth, account ownership growth **decelerated sharply after 2021**.
+
+---
+
+## 👥 Gender Gap Analysis
+
+| Metric | Value |
+|-----------|---------|
+| Male | 56% |
+| Female | 36% |
+| Gap | **20 percentage points** |
+| Female/Male Ratio | 64% |
+
+### Insight
+Financial access inequality remains a **major structural barrier** and must be explicitly modeled in forecasting.
+
+---
+
+## 💳 Usage (Digital Payments) Analysis
+
+### Indicators
+| Indicator | Latest |
+|--------------|-----------|
+| Mobile Money Accounts | 9.45% |
+| Active Mobile Money Users | 66% |
+| Digital Payment Usage | 35% |
+
+### Key Observations
+- Registered ≠ Active ≠ Digital payment usage
+- Many accounts are inactive or P2P-only
+- Usage lags access significantly
+
+---
+
+## 🏗 Infrastructure & Enablers
+
+Available indicators analyzed:
+- 4G Coverage
+- Mobile Penetration
+- Data Affordability
+- Digital ID Enrollment
+- Agent/Transaction infrastructure
+
+### Insight
+Infrastructure shows **leading indicator behavior**, often preceding inclusion growth by 12–18 months.
+
+---
+
+## 📅 Event Timeline Insights
+
+Major events cataloged:
+
+- Telebirr Launch (2021)
+- Safaricom Entry (2022)
+- M-Pesa Launch (2023)
+- Fayda Digital ID Rollout (2024)
+- P2P > ATM milestone (2024)
+- EthioPay Instant Payments (2025)
+
+### Observed Effects
+| Event | Indicator | Direction |
+|---------|-----------|-------------|
+| Telebirr | Account ownership | ↑ |
+| Telebirr | P2P transactions | ↑ |
+| Safaricom | 4G coverage | ↑ |
+| Fayda ID | Access & transactions | ↑ |
+
+---
+
+## 🔗 Correlation Analysis
+
+### Strong Relationships (|r| > 0.7)
+
+| Indicator A | Indicator B | Correlation |
+|--------------|---------------|-------------|
+| Account Ownership | Mobile Money Accounts | +1.0 |
+| Gender Gap | Ownership | −1.0 |
+| Digital ID | P2P Transactions | +1.0 |
+
+### Interpretation
+- Mobile money strongly drives access
+- Gender inequality suppresses inclusion
+- Digital ID acts as a transaction enabler
+
+---
+
+## 🚨 Data Gaps Identified
+
+Sparse indicators (<3 points):
+- ATM metrics
+- Digital payment usage history
+- Infrastructure series
+- Gender-disaggregated metrics
+
+### Impact
+Forecast uncertainty will be higher; event-based modeling becomes critical.
+
+---
+
+## 🎯 Key Insights (Summary)
+
+1. Account ownership growth slowed dramatically after 2021  
+2. Persistent 20pp gender gap  
+3. Mobile money growth does not automatically translate to usage  
+4. Infrastructure investments precede adoption  
+5. Events (Telebirr, M-Pesa, Digital ID) strongly influence outcomes  
+
+---
+
+## 📓 Notebook
+Implemented in:
+
+
 

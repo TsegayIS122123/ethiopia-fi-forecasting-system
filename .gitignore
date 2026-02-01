@@ -1,0 +1,80 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.env/
+.envs/
+.venv/
+ENV/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Data files (IMPORTANT)
+# =========================
+data/raw/
+data/interim/
+data/processed/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# (optional) allow small sample data
+!data/sample/
+!data/sample/*.csv
+
+# =========================
+# Model outputs
+# =========================
+models/
+*.pkl
+*.joblib
+
+# =========================
+# Reports / exports
+# =========================
+reports/
+*.pdf
+*.html
+
+# =========================
+# Secrets
+# =========================
+.env
+*.env
+config/private.yaml

@@ -358,3 +358,16 @@ streamlit run dashboard/app.py
 
 # 4. Open browser and navigate to:
 # http://localhost:8501
+## Documentation Files
+
+### For Auditors & Reviewers
+1. **`data/processed/data_enrichment_log.md`** - Complete audit trail of all data additions
+2. **`reports/enrichment_artifacts_summary.md`** - Task 1-2 enrichment artifacts
+3. **`reports/eda_summary_report.md`** - Focused EDA narratives answering key questions
+4. **`data/processed/enrichment_summary.json`** - JSON summary of enrichments
+
+### Data Governance
+- All data additions documented with source URLs
+- Confidence levels assigned to each record
+- Methodology transparently explained
+- Audit trail maintained for reproducibility

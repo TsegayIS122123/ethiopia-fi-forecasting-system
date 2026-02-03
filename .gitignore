@@ -48,15 +48,12 @@ logs/
 # =========================
 data/raw/
 data/interim/
-data/processed/
 *.csv
 *.xlsx
 *.xls
 *.parquet
-
-# (optional) allow small sample data
-!data/sample/
-!data/sample/*.csv
+*.json
+!data/processed/data_enrichment_log.md
 
 # =========================
 # Model outputs
@@ -64,13 +61,21 @@ data/processed/
 models/
 *.pkl
 *.joblib
+*.h5
 
 # =========================
 # Reports / exports
 # =========================
-reports/
+reports/figures/
 *.pdf
 *.html
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.txt
+!reports/enrichment_artifacts_summary.md
+!reports/figures/eda_summary_report.md
 
 # =========================
 # Secrets
